@@ -27,14 +27,20 @@
         </div>
         <div class="form-group">
           <label for="park-list">Parque en el que se encuentra:</label>
+          
           <select name="" class="form-control" id="park-list">
+
             <option>Seleccionar</option>
+
+            {{#each coaster}}
+            <option value="{{park}}">{{this._id}}</option>
+            {{!-- <option value="">Parque</option>
             <option value="">Parque</option>
             <option value="">Parque</option>
-            <option value="">Parque</option>
-            <option value="">Parque</option>
-            <option value="">Parque</option>
+            <option value="">Parque</option> --}}
           </select>
+          {{coster}}
+          {{each}}
         </div>
 
         <button type="submit" class="btn btn-dark">Crear montaña rusa</button>
